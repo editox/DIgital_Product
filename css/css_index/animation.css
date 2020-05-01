@@ -1,0 +1,92 @@
+.fadeIn {
+   -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: forwards;
+     animation-fill-mode: forwards;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity:0;
+    } to {
+        opacity:1;
+    }
+}
+
+.fadeInDown {
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-fill-mode: both;
+     animation-fill-mode: both;
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0,-100%,0)
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0,0,0)
+    }
+}
+.fadeInUp {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+     animation-fill-mode: both;
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0,100%,0)
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0,0,0)
+    }
+}
+/*
+.carousel-item {
+          
+    cursor: pointer;
+    transition: 2000ms all;
+    transform-origin: center left;
+    position: relative;
+}*/
+
+.rotate {
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-name: rotate;
+    
+}
+@keyframes rotate {
+    from{
+        transform: rotate3d(0, 0, 0, 0);
+    }
+    to{
+        transform: rotate3d(0, 1, 0, 360deg);
+    }
+}
+.scale {
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-name: scale;
+    
+}
+@keyframes scale {
+    from{
+        transform: scale3d(0, 0, 0) rotate3d(0, 0, 0, 0);
+    }
+    to{
+        transform: scale3d(1, 1, 2) rotate3d(1, 0, 0, 360deg);
+    }
+}

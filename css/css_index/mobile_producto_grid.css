@@ -1,0 +1,25 @@
+@media(max-width: 700px) {
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .col-1 {
+        margin: 0;
+        padding: 0;
+    }
+    .one { flex: 1; order: 2; }
+    .two { flex: 1; order: 1; }
+    .three { flex:1; order:3; }
+    .four { flex:1; order:4; }
+    .five { flex:1; order:6; }
+    .six { flex:1; order:5; }
+}
+.one, .four, .five {
+    margin-bottom: 200px;
+}
+
+.four {
+    padding-right: 60px;
+}

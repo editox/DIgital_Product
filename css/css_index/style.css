@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+/*-----------------------------------Varibales*/
+:root{
+  --green-color:#7ACC2D;
+  --white-color:white;
+  --black-color:#313337;
+  /*Tipografia*/
+  --normal: 12px;
+  /*Espaciado*/
+  --space:10px;
+  --space2:20px;
+  /*Box Shadow*/
+  --box:0px 0 2px 1px #e6e5e9;
+}
+/*-----------------------------------Varibales*/
+html,body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--black-color);
+}
+p, label {
+  font-size: var(--normal);
+}
+nav {
+  display: flex;
+  background: var(--green-color);
+  padding: var(--space);
+  color: var(--white-color);
+  justify-content: space-between;
+  align-items: center;
+  min-height: 60px;
+}
+nav ul {
+  display: flex;
+}
+nav li{
+  padding-left: 20px;
+  list-style: none;
+}
+nav li a {
+  color: var(--black-color);
+  font-size: var(--normal);
+  text-decoration: none;
+}
+nav li a:hover {
+  color: var(--white-color);
+}
+hr {
+  opacity: .2;
+}
+/*-------------------------------MAIN SECTION */
+
+.main_section {
+  /*Al expresar el 'padding' en porcentajes, esto es el porcentaje del 'width' del contedor.*/
+  padding: 15%;
+  margin: 0 15%;
+  text-align: center;
+ /*---------------------------------PRODUCTOS */
+}
+.products {
+  background-image: url("../../images/curve.png");
+  height: 50px;
+  background-size: cover;
+  background-position: center top;
+  /*outline: 1px solid blue;*/
+  padding: 20%;
+  display: flex;
+}
+.product {
+  padding: var(--space);
+  margin-top: -350px;
+}
+.product .content {
+  background-color: var(--white-color);
+  padding: 15px;
+  box-shadow: var(--box);
+}
+.img_content {
+  text-align: center;
+}
+.main_button {
+  background-color: var(--green-color);
+  width: 100%;
+  padding: var(--space);
+  color: var(--white-color) ;
+  border: 0;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.main_button:hover {
+  background-color: #5e9e22;
+}
+/* -----------------------------------Beneficios*/
+.benefits {
+  padding: 10%;
+  display: flex;
+ }
+ .benefit {
+  text-align: center;
+  padding: 20px;
+ }
+ .benefit img {
+  max-height: 100px;   
+ }
+ .item--text {
+  text-align: justify;
+ }
+/*----------------------------------------Mentions*/
+
+.mention_title {
+  text-align: center;
+}
+.mentions {
+  padding: 5%;
+  display: flex;
+}
+.mention, .text {
+  padding: var(--space);
+}
+.content_mention {
+  box-shadow: var(--box);
+}
+.mention img {
+  width: 100%;
+}
+.mention h3 {
+  font-size: 20px;
+}
+
+/*--------------------------Venta*/
+.container_form {
+  min-height: calc(100vh - 140px);
+}
+.form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  padding: 20% 10%;
+}
+.form__details{
+  grid-column:1/2;
+  padding: var(--space2);
+  box-shadow: var(--box);
+}
+.form__details--figure{
+  text-align:center;
+  margin: auto;
+  max-width: 150px;
+  width:100%;
+}
+.form__details--img {
+  width: 100%;
+}
+.container__data{
+  padding: var(--space2);
+  grid-column: 2/4;
+  box-shadow: var(--box);
+}
+.data {
+  width: 100%;
+  margin-top: var(--space);
+  border-radius: 2px;
+  border: 1px solid var(--black-color);
+  padding: 7px;
+  box-sizing: border-box;
+}
+.container__data .main_button {
+  margin-top: 10px;
+  font-size: 18px;
+  
+}
+/*-----------------------------FAQS */
+
+.doubts {
+  margin: 10%;
+}
+/*-----------------------------FOOTER*/
+
+.footer {
+  background-color: var(--black-color);
+  height: 60px;
+}
+.footer__enlaces{
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--normal); 
+  margin: 0 15px;
+  color: white;
+}
+.footer__enlaces a{
+  color: var(--green-color);
+  text-decoration: none;
+}
